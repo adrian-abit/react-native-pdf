@@ -86,12 +86,12 @@ public class RCTPdfManager extends SimpleViewManager<PdfView> {
     }
 
     @ReactProp(name = "doublePage")
-    public void setDoublePage(boolean doublePage) {
+    public void setDoublePage(PdfView pdfView, boolean doublePage) {
         pdfView.setDoublePage(doublePage);
     }
 
     @ReactProp(name = "nightMode")
-    public void setNightMode(boolean nightMode) {
+    public void setNightMode(PdfView pdfView, boolean nightMode) {
         pdfView.setNightMode(nightMode);
     }
 
