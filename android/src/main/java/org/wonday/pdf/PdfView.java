@@ -303,7 +303,7 @@ public class PdfView extends PDFView implements OnPageChangeListener, OnLoadComp
     public void setEnablePaging(boolean enablePaging) {
         this.enablePaging = enablePaging;
         if (this.enablePaging) {
-            this.autoSpacing = true;
+            this.autoSpacing = false;
             this.pageFling = true;
             this.pageSnap = true;
         } else {
