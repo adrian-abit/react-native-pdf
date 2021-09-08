@@ -69,6 +69,7 @@ public class PdfView extends PDFView implements OnPageChangeListener,OnLoadCompl
     private String password = "";
     private boolean enableAntialiasing = true;
     private boolean enableAnnotationRendering = true;
+    private boolean doublePage = false;
 
     private boolean enablePaging = false;
     private boolean autoSpacing = false;
@@ -76,6 +77,7 @@ public class PdfView extends PDFView implements OnPageChangeListener,OnLoadCompl
     private boolean pageSnap = false;
     private FitPolicy fitPolicy = FitPolicy.WIDTH;
     private boolean singlePage = false;
+    private boolean nightMode = false;
 
     private static PdfView instance = null;
 
@@ -305,6 +307,14 @@ public class PdfView extends PDFView implements OnPageChangeListener,OnLoadCompl
             this.pageFling = false;
             this.pageSnap = false;
         }
+    }
+
+    public void setDoublePage(boolean doublePage){
+        this.doublePage = doublePage;
+    }
+
+    public void setNightMode(boolean nightMode){
+        this.nightMode = nightMode;
     }
 
     public void setFitPolicy(int fitPolicy) {

@@ -40,6 +40,8 @@ export default class PdfView extends Component {
         singlePage: PropTypes.bool,
         onPageSingleTap: PropTypes.func,
         onScaleChanged: PropTypes.func,
+        doublePage: PropTypes.bool,
+        nightMode: PropTypes.bool
     };
 
     static defaultProps = {
@@ -57,6 +59,8 @@ export default class PdfView extends Component {
         currentPage: -1,
         enablePaging: false,
         singlePage: false,
+        doublePage: false,
+        nightMode: false,
         onPageSingleTap: (page, x, y) => {
         },
         onScaleChanged: (scale) => {
@@ -346,6 +350,8 @@ export default class PdfView extends Component {
                 ref={this._getRef}
                 style={[styles.container, this.props.style]}
                 pagingEnabled={this.props.enablePaging}
+                doublePage={this.props.doublePage}
+                nightMode={this.props.nightMode}
                 contentContainerStyle={[{
                     justifyContent: 'center',
                     alignItems: 'center'

@@ -85,6 +85,16 @@ public class RCTPdfManager extends SimpleViewManager<PdfView> {
         pdfView.setMaxScale(maxScale);
     }
 
+    @ReactProp(name = "doublePage")
+    public void setDoublePage(boolean doublePage) {
+        pdfView.setDoublePage(doublePage);
+    }
+
+    @ReactProp(name = "nightMode")
+    public void setNightMode(boolean nightMode) {
+        pdfView.setNightMode(nightMode);
+    }
+
     @ReactProp(name = "horizontal")
     public void setHorizontal(PdfView pdfView, boolean horizontal) {
         pdfView.setHorizontal(horizontal);

@@ -30,6 +30,8 @@ interface Props {
     activityIndicatorProps?: object,
     enableAntialiasing?: boolean,
     enablePaging?: boolean,
+    doublePage?: boolean,
+    nightMode?: boolean,
     enableRTL?: boolean,
     enableAnnotationRendering?: boolean,
     fitPolicy?: number,

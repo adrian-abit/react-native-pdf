@@ -1,6 +1,3 @@
-# react-native-pdf
-[![npm](https://img.shields.io/npm/v/react-native-pdf.svg?style=flat-square)](https://www.npmjs.com/package/react-native-pdf)
-
 A react native PDF view component (cross-platform support)
 
 ### Feature
@@ -339,6 +336,8 @@ const styles = StyleSheet.create({
 | onPageSingleTap   | function(page)  | null        | callback when page was single tapped | ✔ | ✔ | ✔ | 3.0 |
 | onScaleChanged    | function(scale) | null        | callback when scale page | ✔ | ✔ | ✔ | 3.0 |
 | onPressLink       | function(uri)   | null        | callback when link tapped | ✔ | ✔ | ✖ | 6.0.0 |
+| doublePage | bool | false | renders two pages | ✔ | ✖ | ✖ | 6.4.0
+| nightMode | bool | false | enables night mode | ✔ | ✖ | ✖ | 6.4.0
 
 #### parameters of source
 
