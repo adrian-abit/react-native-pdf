@@ -226,6 +226,7 @@ public class PdfView extends PDFView implements OnPageChangeListener, OnLoadComp
             Constants.Pinch.MINIMUM_ZOOM = this.minScale;
             Constants.Pinch.MAXIMUM_ZOOM = this.maxScale;
 
+            System.out.println("Double Page is " + doublePage);
             Configurator configurator = this.fromUri(getURI(this.path))
                     .defaultPage(this.page - 1)
                     .swipeHorizontal(this.horizontal)
