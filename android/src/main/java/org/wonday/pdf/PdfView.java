@@ -322,7 +322,7 @@ public class PdfView extends PDFView implements OnPageChangeListener, OnLoadComp
 
     public void setDoublePage(boolean doublePage) {
         this.doublePage = doublePage;
-        showLog("set doublepage " + this.enablePaging + " " + this.doublePage);
+        showLog("set doublepage " + this.enablePaging + " " + this.doublePage + " " + doublePage);
         if(this.doublePage && this.enablePaging) {
             this.autoSpacing = false;
         }
@@ -330,6 +330,7 @@ public class PdfView extends PDFView implements OnPageChangeListener, OnLoadComp
 
     public void setNightMode(boolean nightMode) {
         this.nightMode = nightMode;
+        showLog("set nightmode " + this.nightMode + " " + nightMode);
     }
 
     public void setFitPolicy(int fitPolicy) {
