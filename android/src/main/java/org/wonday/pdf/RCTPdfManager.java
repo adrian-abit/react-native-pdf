@@ -87,6 +87,7 @@ public class RCTPdfManager extends SimpleViewManager<PdfView> {
 
     @ReactProp(name = "doublePage")
     public void setDoublePage(PdfView pdfView, boolean doublePage) {
+        System.out.println("SetDoublePage is " + doublePage);
         pdfView.setDoublePage(doublePage);
     }
 
