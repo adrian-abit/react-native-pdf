@@ -306,7 +306,7 @@ public class PdfView extends PDFView implements OnPageChangeListener, OnLoadComp
             if(doublePage)
                 this.autoSpacing = false;
             else
-                this.autoSpacing = true
+                this.autoSpacing = true;
             this.pageFling = true;
             this.pageSnap = true;
         } else {
