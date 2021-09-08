@@ -240,7 +240,7 @@ public class PdfView extends PDFView implements OnPageChangeListener,OnLoadCompl
                 .autoSpacing(this.autoSpacing)
                 .pageFling(this.pageFling)
                     .nightMode(this.nightMode)
-                    .doublePage(this.doublePage)
+                    .setDualPageMode(this.doublePage)
                 .enableSwipe(!this.singlePage)
                 .enableDoubletap(!this.singlePage)
                 .enableAnnotationRendering(this.enableAnnotationRendering)
