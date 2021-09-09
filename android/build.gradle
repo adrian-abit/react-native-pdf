@@ -61,6 +61,6 @@ dependencies {
     implementation "com.facebook.react:react-native:${_reactNativeVersion}"
     // NOTE: The original repo at com.github.barteksc is abandoned by the maintainer; there will be no more updates coming from that repo.
     //       It was taken over by com.github.TalbotGooday; from now on please use this repo until (if ever) the Barteksc repo is resumed.
-    implementation 'com.github.adrian-abit:AndroidPdfViewer:master'
+    implementation 'com.github.adrian-abit:AndroidPdfViewerT:master'
     implementation 'com.google.code.gson:gson:2.8.5'
 }
