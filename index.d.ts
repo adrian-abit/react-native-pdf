@@ -48,6 +48,7 @@ interface Props {
 
 declare class Pdf extends React.Component<Props, any> {
     setPage: (pageNumber: number) => void;
+    setZoom: (zoomlevel: number) => void;
 }
 
 export default Pdf;

@@ -373,6 +373,15 @@ export default class Pdf extends Component {
         });
     }
 
+    setZoom( zoomlevel ) {
+        if ( (zoomlevel === null) || (isNaN(zoomlevel)) ) {
+            throw new Error('Specified zoomlevel is not a number');
+        }
+        this.setNativeProps({
+            scale: zoomlevel
+        });
+    }
+
     _onChange = (event) => {
 
         let message = event.nativeEvent.message.split('|');
